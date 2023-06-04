@@ -1,11 +1,12 @@
-import { NavbarDesktop } from "./navbarDesktop";
-import { NavbarMobile } from "./navbarMobile";
+import { NavbarDesktop } from "./navbarDesktop"
+import { NavbarMobile } from "./navbarMobile"
+import './navbar.css'
 
-export default function Navbar() {
+export function NavBar() {
     return (
-        <>
+        <header>
             <NavbarDesktop />
-            <NavbarMobile />
-        </>
+            {/* <NavbarMobile /> */}
+        </header>
     )
 }

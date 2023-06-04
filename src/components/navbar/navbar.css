@@ -1,0 +1,46 @@
+/* ==========NavBarMobile========== */
+
+
+
+
+
+
+
+
+/* ==========NavBarDesktop========== */
+.desktop-nav{
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    box-shadow: 0 0 12px 0 black;
+    background: #EEEEEF;
+}
+
+.desktop-logo{
+    max-height: 80px;
+}
+
+.desktop-links-container{
+    display: flex;
+    gap: 2.5rem;
+}
+
+.desktop-link{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    font-weight: 600;
+}
+
+.active{
+    position: relative;
+    color: #3753E1;
+}
+
+.cgprofile{
+    font-size: 2rem;
+}
+

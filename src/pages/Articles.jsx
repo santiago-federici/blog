@@ -1,8 +1,9 @@
+import './articles.css'
 
-
-export default function Articles() {
+export function Articles() {
     return (
-        <>
-        </>
+        <main>
+        
+        </main>
     )
 }

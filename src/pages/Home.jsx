@@ -1,8 +1,9 @@
+import './home.css'
 
-
-export default function Home() {
+export function Home() {
     return (
-        <>
-        </>
+        <main>
+            
+        </main>
     )
 }

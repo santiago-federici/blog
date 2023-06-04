@@ -1,8 +1,9 @@
 
 
-export default function Footer() {
+export function Footer() {
     return (
-        <>
-        </>
+        <footer>
+            footer
+        </footer>
     )
 }

@@ -1,0 +1,33 @@
+/* ==========FooterMobile========== */
+.mobile-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-direction: column;
+    padding: 2rem;
+    background: #EEEEEF;
+}
+
+.mobile-footer__icons{
+    display: flex;
+    gap: 2rem;
+}
+
+.bihomealt, 
+.grarticle,
+.mdfavoriteborder{
+    font-size: 2.5rem;
+    padding: .2rem;
+}
+
+.icon-container{
+    background: #fff;
+    border-radius: 50%;
+    padding: .3rem;
+}
+
+/* ==========FooterDesktop========== */
+
+
+/* ==========MediaQuerys========== */

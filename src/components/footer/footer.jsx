@@ -11,12 +11,29 @@ export function Footer() {
     return (
         <footer className='footer'>
             <section className='socialmedia-container'>
-                <SiInstagram className='siinstagram' />
-                <BsTwitter className='bstwitter' />
-                <FaGithub className='fagithub' />
-                <BsFacebook className='bsfacebook' />
-                <BsLinkedin className='bslinkedin' />
-                <BsYoutube className='bsyoutube' />
+                <span className='icon-container instagram-container'>
+                    <SiInstagram className='siinstagram' />
+                </span>
+
+                <span className='icon-container twitter-container'>
+                    <BsTwitter className='bstwitter' />
+                </span>
+
+                <span className='icon-container github-container'>
+                    <FaGithub className='fagithub' />
+                </span>
+
+                <span className='icon-container facebook-container'>
+                    <BsFacebook className='bsfacebook' />
+                </span>
+
+                <span className='icon-container linkedin-container'>
+                    <BsLinkedin className='bslinkedin' />
+                </span>
+
+                <span className='icon-container youtube-container'>
+                    <BsYoutube className='bsyoutube' />
+                </span>
             </section>
 
             <section className='copyright-container'>

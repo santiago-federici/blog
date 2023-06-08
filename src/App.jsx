@@ -23,7 +23,7 @@ function App() {
                     <Route path="/another" element={<Another />} />0
                 </Routes> */}
                 <MobileIcons />
-                {/* <Footer /> */}
+                <Footer />
             </Router>
         </div>
     )

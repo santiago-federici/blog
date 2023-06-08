@@ -49,6 +49,7 @@
     text-decoration: none;
     font-weight: 700;
     position: relative;
+    padding-bottom: 2px;
 }
 
 .page-navlink:hover{
@@ -57,7 +58,7 @@
 
 .page-navlink::after{
     content: '';
-    height: 2px;
+    height: 3px;
     background: var(--ten-color);
     width: 0%;
     position: absolute;

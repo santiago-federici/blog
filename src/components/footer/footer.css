@@ -1,22 +1,22 @@
-.footer{
+ .footer{
     display: flex;
-    flex-direction: column;
-    gap: 6rem;
-    width: 100%;
-    background: var(--sixty-color);
     justify-content: center;
     align-items: center;
-    padding: 2rem;
-
-
+    flex-direction: column;
+    padding: 1rem;
+    gap: 3rem;
+    margin-bottom: 80px;
 }
 
 .socialmedia-container{
     display: flex;
-    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    padding: .5rem;
+    gap: 1rem;
     background: var(--thirty-color);
-    padding: 1rem;
-    border-radius: 20px;
+    border-radius: 1rem;
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, .2);
 }
 
 .siinstagram,
@@ -25,16 +25,127 @@
 .bsfacebook,
 .bslinkedin,
 .bsyoutube{
-    font-size: 2rem;
-}
-
-.bstwitter{
-    font-size: 2rem;
+    font-size: 1.3rem;
+    z-index: 1;
 }
 
 .copyright-container{
-    display: grid;
-    place-items: center;
-    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    text-align: center;
+    background: var(--thirty-color);
+    padding: .5rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, .2);
 }
 
+@media (min-width: 500px){
+    
+    .siinstagram,
+    .bstwitter,
+    .fagithub,
+    .bsfacebook,
+    .bslinkedin,
+    .bsyoutube{
+        font-size: 2rem;
+    }
+}
+
+@media (min-width: 1024px){
+    .icon-container{
+        display: grid;
+        place-items: center;
+        background: var(--sixty-color);
+        width: 60px;
+        height: 60px;
+        border: var(--sixty-color) solid 2px;
+        border-radius: 100%;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .instagram-container::before{
+        content: '';
+        position: absolute;
+        background: radial-gradient(
+            circle at 33% 100%,
+            #fed373 4%,
+            #f15245 30%,
+            #d92e7f 62%,
+            #9b36b7 85%,
+            #515ecf);
+        width: 100%;
+        height: 0%;
+        bottom: 0;
+        transition: .5s all ease;
+    }
+    
+    .twitter-container::before{
+        content: '';
+        position: absolute;
+        background: #1DA1F2;
+        width: 100%;
+        height: 0%;
+        bottom: 0;
+        transition: .5s all ease;
+    }
+
+    .github-container::before{
+        content: '';
+        position: absolute;
+        background: #171B23;
+        width: 100%;
+        height: 0%;
+        bottom: 0;
+        transition: .5s all ease;
+    }
+
+    .facebook-container::before{
+        content: '';
+        position: absolute;
+        background: #4267B2;
+        width: 100%;
+        height: 0%;
+        bottom: 0;
+        transition: .5s all ease;
+    }
+
+    .linkedin-container::before{
+        content: '';
+        position: absolute;
+        background: #0B66C3;
+        width: 100%;
+        height: 0%;
+        bottom: 0;
+        transition: .5s all ease;
+    }
+
+    .youtube-container::before{
+        content: '';
+        position: absolute;
+        background: #FF0000;
+        width: 100%;
+        height: 0%;
+        bottom: 0;
+        transition: .5s all ease;
+    }
+    
+    .icon-container:hover::before{
+        height: 100%;
+    }
+
+    .icon-container:hover .siinstagram,
+    .icon-container:hover .bstwitter,
+    .icon-container:hover .fagithub,
+    .icon-container:hover .bsfacebook,
+    .icon-container:hover .bslinkedin,
+    .icon-container:hover .bsyoutube
+    {
+        color: var(--sixty-color);
+        transition: 1s all ease;
+        rotate: calc(360deg);
+    }
+}

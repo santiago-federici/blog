@@ -1,33 +1,40 @@
-/* ==========FooterMobile========== */
-.mobile-footer{
+.footer{
     display: flex;
+    flex-direction: column;
+    gap: 6rem;
+    width: 100%;
+    background: var(--sixty-color);
     justify-content: center;
     align-items: center;
-    gap: 2rem;
-    flex-direction: column;
     padding: 2rem;
-    background: #EEEEEF;
+
+
 }
 
-.mobile-footer__icons{
+.socialmedia-container{
     display: flex;
     gap: 2rem;
+    background: var(--thirty-color);
+    padding: 1rem;
+    border-radius: 20px;
 }
 
-.bihomealt, 
-.grarticle,
-.mdfavoriteborder{
-    font-size: 2.5rem;
-    padding: .2rem;
+.siinstagram,
+.bstwitter,
+.fagithub,
+.bsfacebook,
+.bslinkedin,
+.bsyoutube{
+    font-size: 2rem;
 }
 
-.icon-container{
-    background: #fff;
-    border-radius: 50%;
-    padding: .3rem;
+.bstwitter{
+    font-size: 2rem;
 }
 
-/* ==========FooterDesktop========== */
+.copyright-container{
+    display: grid;
+    place-items: center;
+    gap: 1rem;
+}
 
-
-/* ==========MediaQuerys========== */

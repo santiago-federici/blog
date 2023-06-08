@@ -1,7 +1,16 @@
-*{
+:root{    
+    --sixty-color: #fff;
+    --thirty-color: #EBF2FF;
+    --ten-color: #3753E1;
+}
+
+*,
+*::after,
+*::before {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-size: 16px;
+    font-size: 20px;
     font-family: 'Libre Baskerville', serif;
 }
+

@@ -5,7 +5,7 @@
     align-items: center;
     gap: 4rem;
     padding: 4rem 1rem;
-    background:  #EEEEEF;
+    background:  var(--sixty-color);
 }
 
 .articles-cards-container{

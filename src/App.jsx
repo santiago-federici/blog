@@ -2,6 +2,7 @@ import { NavBar } from './components/navbar/Navbar'
 import { Home } from './pages/Home'
 import { Articles } from './pages/Articles'
 import { Another } from './pages/Another'
+import { MobileIcons } from './components/mobileIcons/MobileIcons'
 import { Footer } from './components/footer/Footer'
 import { BrowserRouter as Router } from 'react-router-dom'
 import { Routes, Route } from 'react-router-dom'
@@ -21,6 +22,7 @@ function App() {
                     <Route path="/articles" element={<Articles />} />0
                     <Route path="/another" element={<Another />} />0
                 </Routes> */}
+                <MobileIcons />
                 {/* <Footer /> */}
             </Router>
         </div>

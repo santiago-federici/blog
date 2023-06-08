@@ -1,0 +1,27 @@
+.aioutlinehome,
+.grarticle,
+.aioutlinefolder{
+    font-size: 2.5rem;
+}
+
+.mobileicons-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+    background: var(--sixty-color);
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: 80px;
+    gap: 2rem;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+
+@media (min-width: 1024px){
+    .mobileicons-container{
+        display: none;
+    }
+}

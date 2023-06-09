@@ -36,10 +36,9 @@
     align-items: center;
     gap: 2rem;
     text-align: center;
-    background: var(--thirty-color);
+    background: var(--sixty-color);
     padding: .5rem;
     border-radius: 1rem;
-    box-shadow: 0 0 5px 1px rgba(0, 0, 0, .2);
 }
 
 @media (min-width: 500px){

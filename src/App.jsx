@@ -17,11 +17,11 @@ function App() {
         <div className='body-app'>
             <Router>
                 <NavBar />
-                {/* <Routes>
+                <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/articles" element={<Articles />} />0
                     <Route path="/another" element={<Another />} />0
-                </Routes> */}
+                </Routes>
                 <MobileIcons />
                 <Footer />
             </Router>

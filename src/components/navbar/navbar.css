@@ -30,8 +30,11 @@
     border-radius: 20px;
 }
 
-.register-btn{
+.register-btn-mobile{
     display: none;
+}
+
+.register-btn{
     background: var(--ten-color);
     color: var(--sixty-color);
     padding: .4rem 1rem;
@@ -50,6 +53,7 @@
     font-weight: 700;
     position: relative;
     padding-bottom: 2px;
+    color: black;
 }
 
 .page-navlink:hover{

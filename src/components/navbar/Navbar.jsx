@@ -28,7 +28,7 @@ export function NavBar() {
 
                 <div className='btns-container'>
                     <button className='login-btn' onClick={ logged }>Login</button>
-                    <button className='register-btn' onClick={ logged }>Register</button>
+                    <button className='register-btn register-btn-mobile' onClick={ logged }>Register</button>
                 </div>
             </nav>
         </header>

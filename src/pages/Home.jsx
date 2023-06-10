@@ -1,5 +1,6 @@
 import { BsFillEnvelopeFill } from "react-icons/bs";
 import { CiMoneyCheck1 } from "react-icons/ci";
+import { TrendingTopics } from "../components/trendingTopics/TrendingTopics";
 import './home.css'
 
 export function Home() {
@@ -7,17 +8,7 @@ export function Home() {
         <main className='home-main'>
             <h1 className='home-h1'>Welcome to The News Wave!</h1>
 
-            <div className='cards-container'>
-                <section className='article-card'>
-                    <img 
-                    src="https://nationalseniors.com.au/generated/1440w-3-2/istock-1294303237-cryptocurrency-investment-financial-22-jpg.jpg?1644369957" 
-                    alt="" />    
-                    <div className="article-card__info">
-                        <h2 className='article-card__title'>Crypto currency</h2>
-                        <button className='article-card__gotobtn'>Topic</button>
-                    </div>
-                </section>                
-            </div>
+            <TrendingTopics />
 
             <div className='join-container'>
                 <section className="join-card">

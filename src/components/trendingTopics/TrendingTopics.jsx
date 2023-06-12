@@ -9,7 +9,7 @@ export function TrendingTopics() {
                     src="https://nationalseniors.com.au/generated/1440w-3-2/istock-1294303237-cryptocurrency-investment-financial-22-jpg.jpg?1644369957" 
                     alt="" />    
                     <div className="topic-card__info">
-                        <h2 className='topic-card__title'>Crypto currency</h2>
+                        <h2>Crypto currency</h2>
                         <button className='topic-card__gotobtn'>Topic</button>
                     </div>
                 </section>

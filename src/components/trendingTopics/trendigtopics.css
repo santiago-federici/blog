@@ -36,7 +36,7 @@
 .topic-card__gotobtn{
     background: var(--ten-color);
     border: none;
-    border-radius: 1rem;
+    border-radius: .5rem;
     padding: .4rem 1rem;
-    color: white;
+    font-weight: 700;
 }

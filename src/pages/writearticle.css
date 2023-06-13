@@ -75,6 +75,16 @@
     color: rgb(0 0 0);
 }
 
+.chosen-image-filename{
+    display: flex;
+    gap: .5rem;
+}
+
+.aifilldelete{
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
 @media(min-width: 700px){
     .new-article__img{
         max-height: 500px;

@@ -1,4 +1,5 @@
 import { BsUpload } from 'react-icons/bs'
+import { AiFillDelete } from 'react-icons/ai'
 import { useState } from 'react'
 
 
@@ -16,8 +17,7 @@ export function WriteArticle() {
                     files[0] && setFileName(files[0].name)
                     if(files){
                         setImage(URL.createObjectURL(files[0]))
-                        document.querySelector(".bsupload").style.display = 'none'
-                        document.querySelector(".custom-choose-image").style.display = 'none'
+                        document.querySelector(".new-article__img-container").style.display = 'none'
                     }
                 } } />
                 {image ?
@@ -29,7 +29,13 @@ export function WriteArticle() {
                         Choose image
                     </label>
                 </div>}
-                
+                <p className='chosen-image-filename'>
+                    {fileName}
+                    <AiFillDelete className='aifilldelete' onClick={(e) => {
+                        setFileName('No selected file')
+                        setImage(null)
+                    }} />
+                </p>
                 <div className='new-article__info'>
                     <input type="text" placeholder='Insert title' className='insert-title-input' />
                     <input type="text" placeholder='Insert text' className='insert-text-input' />

@@ -9,6 +9,9 @@ import { Routes, Route } from 'react-router-dom'
 
 
 import './App.css'
+import { Profile } from './pages/Profile'
+import { WriteArticle } from './pages/WriteArticle'
+import { ReadMore } from './components/readMore/ReadMore'
 
 function App() {
 
@@ -19,8 +22,11 @@ function App() {
                 <NavBar />
                 <Routes>
                     <Route path="/" element={<Home />} />
-                    <Route path="/articles" element={<Articles />} />0
-                    <Route path="/another" element={<Another />} />0
+                    <Route path="/articles" element={<Articles />} />
+                    <Route path="/another" element={<Another />} />
+                    <Route path="/profile" element={<Profile />} />
+                    <Route path="/writearticle" element={<WriteArticle />} />
+                    <Route path="/readmore" element={<ReadMore />} />
                 </Routes>
                 <MobileIcons />
                 <Footer />

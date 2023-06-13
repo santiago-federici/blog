@@ -24,7 +24,7 @@ export function NavBar() {
                     <NavLink activeclassname="active" className='page-navlink' to="/another">Another</NavLink>
                 </ul>
 
-                <FaUserCircle className='fausercircle' />
+                <NavLink to={'/profile'}><FaUserCircle className='fausercircle' /></NavLink>
 
                 <div className='btns-container'>
                     <button className='login-btn' onClick={ logged }>Login</button>

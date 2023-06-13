@@ -1,0 +1,39 @@
+.profile-main{
+    padding: 1rem;
+    display: grid;
+    gap: 2rem;
+}
+
+.user-profile-container{
+    justify-self: center;
+    display: grid;
+    place-items: center;
+    gap: .6rem;
+    width: fit-content;
+    text-align: center;
+}
+
+.user-profile__info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .7rem;
+    flex-wrap: wrap;
+}
+
+.user-profile-container > img{
+    border-radius: 50%;
+    width: 80px;
+}
+
+.myarticles-container{
+    display: grid;
+    gap: 1rem;
+}
+
+@media(min-width: 500px){
+    .user-profile-container > img{
+        width: 120px;
+    }
+    
+}

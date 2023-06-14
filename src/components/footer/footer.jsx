@@ -5,35 +5,37 @@ import { BsFacebook } from 'react-icons/bs'
 import { BsLinkedin } from 'react-icons/bs'
 import { BsYoutube } from 'react-icons/bs'
 
+import { Link, NavLink } from 'react-router-dom'
+
 import './footer.css'
 
 export function Footer() {
     return (
         <footer className='footer'>
             <section className='socialmedia-container'>
-                <span className='icon-container instagram-container'>
-                    <SiInstagram className='siinstagram' />
-                </span>
+                    <NavLink className={'icon-container instagram-container'} to={'https://www.instagram.com/santi_federici/'}>
+                        <SiInstagram className='siinstagram' />
+                    </NavLink>
 
-                <span className='icon-container twitter-container'>
-                    <BsTwitter className='bstwitter' />
-                </span>
+                    <NavLink className='icon-container twitter-container' to={'https://twitter.com/Santi_Federici'}>
+                        <BsTwitter className='bstwitter' />
+                    </NavLink>
 
-                <span className='icon-container github-container'>
-                    <FaGithub className='fagithub' />
-                </span>
+                    <NavLink className='icon-container github-container' to={'https://github.com/santiago-federici'}>
+                        <FaGithub className='fagithub' />
+                    </NavLink>
 
-                <span className='icon-container facebook-container'>
-                    <BsFacebook className='bsfacebook' />
-                </span>
+                    <NavLink className='icon-container facebook-container' to={'https://www.facebook.com/santi.federici.3/'}>
+                        <BsFacebook className='bsfacebook' />
+                    </NavLink>
 
-                <span className='icon-container linkedin-container'>
-                    <BsLinkedin className='bslinkedin' />
-                </span>
+                    <NavLink className='icon-container linkedin-container' to={'https://www.linkedin.com/in/santiago-federici-146817270/'}>
+                        <BsLinkedin className='bslinkedin' />
+                    </NavLink>
 
-                <span className='icon-container youtube-container'>
-                    <BsYoutube className='bsyoutube' />
-                </span>
+                    <NavLink className='icon-container youtube-container' to={'https://www.youtube.com/channel/UCHLuschMmoty6IGvIurYYYA'}>
+                        <BsYoutube className='bsyoutube' />
+                    </NavLink>
             </section>
 
             <section className='copyright-container'>

@@ -1,15 +1,17 @@
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
 
+
+
 const firebaseConfig = {
-    apiKey: "AIzaSyBtYwqvr7-5kjbEDwCYhpKUo2BoYLM5wO8",
-    authDomain: "blog-812bb.firebaseapp.com",
-    projectId: "blog-812bb",
-    storageBucket: "blog-812bb.appspot.com",
-    messagingSenderId: "124045408727",
-    appId: "1:124045408727:web:aa32abc7b9ce5fe6103392",
-    measurementId: "G-MLCWNXE626"
-  };
+  apiKey: "AIzaSyDHrFiqnT-oNAi3B5FrhmnSg3OGjFxngoI",
+  authDomain: "blogreactjs-bb0f4.firebaseapp.com",
+  projectId: "blogreactjs-bb0f4",
+  storageBucket: "blogreactjs-bb0f4.appspot.com",
+  messagingSenderId: "1031504361538",
+  appId: "1:1031504361538:web:9e494101ef241c95fc15db",
+  measurementId: "G-L29JJDKF8R"
+};
 
   const app = initializeApp(firebaseConfig);
   const analytics = getAnalytics(app);

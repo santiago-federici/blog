@@ -1,17 +1,19 @@
-import { NavBar } from './components/navbar/Navbar'
-import { Home } from './pages/Home'
-import { Articles } from './pages/Articles'
-import { Another } from './pages/Another'
-import { MobileIcons } from './components/mobileIcons/MobileIcons'
-import { Footer } from './components/footer/Footer'
 import { BrowserRouter as Router } from 'react-router-dom'
 import { Routes, Route } from 'react-router-dom'
 
+import { MobileIcons } from './components/containers/mobileIcons/MobileIcons'
+
+import { NavBar } from './components/containers/navbar/Navbar'
+import { Home } from './pages/home/Home'
+import { Another } from './pages/another/Another'
+import { Articles } from './pages/articles/Articles'
+import { Footer } from './components/containers/footer/Footer'
+import { Profile } from './pages/profile/Profile'
+import { WriteArticle } from './pages/writeArticle/WriteArticle' 
+import { ReadMore } from './components/containers/readMore/ReadMore' 
+import { Login } from './components/containers/login/login'
 
 import './App.css'
-import { Profile } from './pages/Profile'
-import { WriteArticle } from './pages/WriteArticle'
-import { ReadMore } from './components/readMore/ReadMore'
 
 function App() {
 
@@ -27,6 +29,7 @@ function App() {
                     <Route path="/profile" element={<Profile />} />
                     <Route path="/writearticle" element={<WriteArticle />} />
                     <Route path="/readmore" element={<ReadMore />} />
+                    <Route path="/login" element={<Login />} />
                 </Routes>
                 <MobileIcons />
                 <Footer />

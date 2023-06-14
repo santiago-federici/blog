@@ -1,5 +1,5 @@
 import { FaUserCircle } from 'react-icons/fa'
-import  Logo  from '../../assets/images/logo.jpg'
+import  Logo  from '../../../assets/images/logo.jpg'
 import { NavLink } from 'react-router-dom'
 import './navbar.css'
 
@@ -27,8 +27,8 @@ export function NavBar() {
                 <NavLink to={'/profile'}><FaUserCircle className='fausercircle' /></NavLink>
 
                 <div className='btns-container'>
-                    <button className='login-btn' onClick={ logged }>Login</button>
-                    <button className='register-btn register-btn-mobile' onClick={ logged }>Register</button>
+                    <NavLink className='login-btn' to={'/login'}><p>Login</p></NavLink>
+                    <NavLink className='register-btn register-btn-mobile' to={'/login'}><p>Register</p></NavLink>
                 </div>
             </nav>
         </header>

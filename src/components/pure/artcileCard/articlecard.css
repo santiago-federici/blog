@@ -83,6 +83,15 @@
     color: #fff;
 }
 
+.article-card__date{
+    position: absolute;
+    left: 0;    
+    bottom: 0;
+    margin: 0 0 .5rem .5rem;
+    font-size: .7rem;
+    color: #949494;
+}
+
 @media(min-width: 700px){
     .article-card{
         display: flex;
@@ -91,9 +100,14 @@
     .article-card > img{
         max-width: 550px;
     }
-
+    
     .article-card__user{
         top: 0;
         margin: 10px 20px 0 0;
+    }
+
+    .article-card__date{
+        left: 60%;
+        top: 1rem;
     }
 }

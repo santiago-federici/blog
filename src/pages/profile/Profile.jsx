@@ -1,5 +1,5 @@
-import User from '../assets/images/user.jpg'
-import { ArticleCard } from '../components/artcileCard/ArticleCard'
+import User from '../../assets/images/user.jpg'
+import { ArticleCard } from '../../components/pure/artcileCard/ArticleCard'
 import './profile.css'
 
 export function Profile() {

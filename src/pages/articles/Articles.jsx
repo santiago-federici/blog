@@ -1,12 +1,10 @@
 
-import  Raptor  from '../assets/images/raptor.jpg'
-import  User  from '../assets/images/user.jpg'
-import  Bodybuilder  from '../assets/images/bodybuilder.jpg'
-import  Astronaut  from '../assets/images/astronaut.jpg'
-import { TrendingTopics } from '../components/trendingTopics/TrendingTopics'
-import { HiArrowNarrowRight } from 'react-icons/hi'
+import Raptor from '../../assets/images/raptor.jpg'
+import  User  from '../../assets/images/user.jpg'
+import { TrendingTopics } from '../../components/containers/trendingTopics/TrendingTopics'
+import { ArticleCard } from '../../components/pure/artcileCard/ArticleCard'
+
 import './articles.css'
-import { ArticleCard } from '../components/artcileCard/ArticleCard'
 
 export function Articles() {
 
@@ -20,11 +18,29 @@ export function Articles() {
                 <h2>For you</h2>
                 
                 <div className='articles-cards-container'>
-                    <ArticleCard />
+                    <ArticleCard 
+                    date='2 weeks ago' 
+                    userimg={ User } 
+                    userat='@userat' 
+                    title='Title' 
+                    img={ Raptor } 
+                    text='Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam facilis pariatur modi eum harum dolorem...' />
                     
-                    <ArticleCard />
+                    <ArticleCard 
+                    date='2 weeks ago' 
+                    userimg={ User } 
+                    userat='@userat' 
+                    title='Title' 
+                    img={ Raptor } 
+                    text='Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam facilis pariatur modi eum harum dolorem...' />
 
-                    <ArticleCard />
+                    <ArticleCard 
+                    date='2 weeks ago' 
+                    userimg={ User } 
+                    userat='@userat' 
+                    title='Title' 
+                    img={ Raptor } 
+                    text='Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam facilis pariatur modi eum harum dolorem...' />
                 </div>
             </div>
 

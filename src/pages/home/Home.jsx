@@ -1,6 +1,6 @@
 import { BsFillEnvelopeFill } from "react-icons/bs";
 import { CiMoneyCheck1 } from "react-icons/ci";
-import { TrendingTopics } from "../components/trendingTopics/TrendingTopics";
+import { TrendingTopics } from "../../components/containers/trendingTopics/TrendingTopics";
 import './home.css'
 
 export function Home() {

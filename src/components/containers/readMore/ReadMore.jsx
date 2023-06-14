@@ -1,5 +1,5 @@
-import  User  from '../../assets/images/user.jpg'
-import Car from '../../assets/images/car.jpg'
+import User from '../../../assets/images/user.jpg'
+import Car from '../../../assets/images/car.jpg'
 
 import { BiLike } from 'react-icons/bi'
 import { AiFillLike } from 'react-icons/ai'

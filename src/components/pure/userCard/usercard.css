@@ -1,0 +1,64 @@
+.user-card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 2rem;
+    height: fit-content;
+    gap: .5rem;
+}
+
+.user-card-info{
+    display: flex;
+    gap: .5rem;
+}
+
+.user-card-at{
+    font-size: .8rem;
+    color: rgb(77, 77, 77);
+}
+
+.user-card-info > img{
+    width: 40px;
+    height: 40px;
+    border-radius: 1000px;
+}
+
+.follow-btn{
+    display: block;
+    cursor: pointer;
+    border: none;
+    border-radius: 1rem;
+    background: var(--ten-color);
+    padding: .4rem .6rem;
+    color: #fff;
+    font-size: .9rem;
+    width: 130px;
+}
+
+.is-following-btn{
+    background: var(--sixty-color);
+    color: rgb(0 0 0);
+}
+
+.stop-following-btn{
+    display: none;
+}
+
+.is-following-btn:hover{
+    background: red;
+}
+
+.is-following-btn:hover .follow-btn-text{
+    display: none;
+}
+
+.is-following-btn:hover .stop-following-btn{
+    display: block;
+}
+
+
+@media(min-width: 1500px){
+    .user-card{
+        justify-self: flex-start;
+    }
+}

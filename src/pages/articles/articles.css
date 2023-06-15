@@ -1,5 +1,5 @@
 .articles-main{
-    padding: 1rem;
+    padding: 2rem 2rem;
     width: 100%;
     display: grid;
     gap: 1rem;
@@ -29,55 +29,6 @@
     gap: 2rem;
 }
 
-.trending-writers{
-    justify-self: center;
-    width: 100%;
-    max-width: 400px;
-    max-height: 550px;
-    display: grid;
-    justify-items: flex-start;
-    gap: .5rem;
-    position: relative;
-    padding: 1rem;
-    background: var(--thirty-color);
-    border-top-right-radius: 1rem;
-    border-bottom-left-radius: 1rem;
-    box-shadow: 0 0 5px 1px rgba(0, 0, 0, .2);
-}
-
-.trending-writers__user{
-    justify-self: center;
-    background: var(--sixty-color);
-    border-radius: 2rem;
-    min-width: fit-content;
-    max-width: 320;
-    height: fit-content;
-    display: flex;
-    gap: 7px;
-    align-items: center;
-    padding: .2rem .6rem;
-}
-
-.trending-writers__user > p{
-    font-size: 18px;
-}
-
-.trending-writers__user > img{
-    height: 60px;
-    border-radius: 50%;
-}
-
-.follow-btn{
-    /* background: var(--ten-color); */
-    background: rgb(0 0 0);
-    border: none;
-    border-radius: 1rem;
-    padding: .2rem .5rem;
-    font-size: .7rem;
-    /* font-weight: 900; */
-    color: white;
-}
-
 .principal-container{
     display: grid;
     gap: 1rem;
@@ -90,6 +41,10 @@
 }
 
 @media(min-width: 700px){
+    .articles-main{
+        padding: 2rem 4rem;
+    }
+
     .searchbox{
         justify-self: flex-end;
         max-width: 400px;
@@ -99,9 +54,5 @@
 @media(min-width: 1500px){
     .articles-main{
         grid-template-columns: 75% 25%;
-    }
-
-    .trending-writers__user{
-        justify-self: flex-start;
     }
 }

@@ -2,6 +2,7 @@
 import Raptor from '../../assets/images/raptor.jpg'
 import  User  from '../../assets/images/user.jpg'
 import { TrendingTopics } from '../../components/containers/trendingTopics/TrendingTopics'
+import { TrendingWriters } from '../../components/containers/trendingWriters/TrendingWriters'
 import { ArticleCard } from '../../components/pure/artcileCard/ArticleCard'
 
 import './articles.css'
@@ -45,30 +46,7 @@ export function Articles() {
             </div>
 
             <div className='trending-container'>
-                <div className='trending-writers'>
-                    <h2>Trending Writers</h2>
-
-                    <div className='trending-writers__user'>
-                            <img src={ User } alt="" />
-                            <p>@userat</p>
-                            <button className='follow-btn'>Follow</button>
-                    </div>
-                    <div className='trending-writers__user'>
-                            <img src={ User } alt="" />
-                            <p>@userat</p>
-                            <button className='follow-btn'>Follow</button>
-                    </div>
-                    <div className='trending-writers__user'>
-                            <img src={ User } alt="" />
-                            <p>@userat</p>
-                            <button className='follow-btn'>Follow</button>
-                    </div>
-                    <div className='trending-writers__user'>
-                            <img src={ User } alt="" />
-                            <p>@userat</p>
-                            <button className='follow-btn'>Follow</button>
-                    </div>
-                </div>
+                <TrendingWriters />
                 
                 <TrendingTopics />
             </div>

@@ -5,7 +5,10 @@
 }
 
 .article-card{
+
+    border: 1px solid rgba(255, 255, 255, 0.096);
     box-shadow: 0 0 15px 4px rgb(0, 0, 0, .6);
+
     position: relative;
     overflow: hidden;
 
@@ -105,11 +108,6 @@
 .readmore-btn:hover::before{
     width: 100%;
 }
-
-.readmore-btn:hover .hiarrownarrowright{
-    color: var(--clr-text);
-}
-
 
 @media(min-width:1024px){
     .article-card{

@@ -11,45 +11,50 @@ export function Articles() {
 
 
     return (
-        <main className='articles-main'>
-            <div className='principal-container'>
-                <input type="text" placeholder='Search a topic' className='searchbox' />
+        <main className='articles-main articles-flow'>
 
+            <input type="text" placeholder='Search a topic' className='searchbox' id='searchbox-input' />
 
-                <h2>For you</h2>
+            <h2 className='foryou'>For you</h2>
+
+            <article className='article-cards-container'>
+                <ArticleCard 
+                date='2 weeks ago' 
+                userimg={ User } 
+                userName= 'Santi Federici' 
+                userat='@userat' 
+                title='Title' 
+                img={ Raptor } 
+                text='Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum neque sapiente repellendus reiciendis iste! Eum, possimus quod? Corrupti sapiente eius ipsa, soluta itaque incidunt omnis magni a ut fuga vero autem, fugiat commodi sit tempore, culpa minus delectus. Est quaerat omnis culpa iste molestiae, sint ducimus vel sed dolores? Modi, temporibus itaque rem reprehenderit nostrum adipisci mollitia? Ratione sequi tempora quas exercitationem,........' />
                 
-                <div className='articles-cards-container'>
-                    <ArticleCard 
-                    date='2 weeks ago' 
-                    userimg={ User } 
-                    userat='@userat' 
-                    title='Title' 
-                    img={ Raptor } 
-                    text='Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam facilis pariatur modi eum harum dolorem...' />
-                    
-                    <ArticleCard 
-                    date='2 weeks ago' 
-                    userimg={ User } 
-                    userat='@userat' 
-                    title='Title' 
-                    img={ Raptor } 
-                    text='Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam facilis pariatur modi eum harum dolorem...' />
+                <ArticleCard 
+                date='2 weeks ago' 
+                userimg={ User } 
+                userName= 'Mati Navio' 
+                userat='@userat' 
+                title='Title' 
+                img={ Raptor } 
+                text='Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam facilis pariatur modi eum harum dolorem...' />
 
-                    <ArticleCard 
-                    date='2 weeks ago' 
-                    userimg={ User } 
-                    userat='@userat' 
-                    title='Title' 
-                    img={ Raptor } 
-                    text='Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam facilis pariatur modi eum harum dolorem...' />
-                </div>
-            </div>
+                <ArticleCard 
+                date='2 weeks ago' 
+                userimg={ User } 
+                userName= 'Exequiel Carizzo' 
+                userat='@userat' 
+                title='Title' 
+                img={ Raptor } 
+                text='Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam facilis pariatur modi eum harum dolorem...' />
+            </article>
 
-            <div className='trending-container'>
+
+
+
+
+            <aside className='trending-container'>
                 <TrendingWriters />
                 
                 <TrendingTopics />
-            </div>
+            </aside>
         </main>
     )
 }

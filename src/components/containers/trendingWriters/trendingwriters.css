@@ -1,19 +1,9 @@
 .trending-writers{
-    display: none;
-}
+    display: grid;
+    gap: 1rem;
+    width: 100%;
+    padding: 1rem;
+    border-radius: .5rem;
 
-@media(min-width: 1024px){
-    .trending-writers{
-        display: grid;
-        width: fit-content;
-        max-width: 400px;
-        max-height: 550px;
-        gap: .5rem;
-        position: relative;
-        padding: 1rem;
-        background: var(--thirty-color);
-        border-top-right-radius: 1rem;
-        border-bottom-left-radius: 1rem;
-        box-shadow: 0 0 5px 1px rgba(0, 0, 0, .2);
-    }
+    box-shadow: 0 0 15px 4px rgb(0, 0, 0, .6);
 }

@@ -1,58 +1,67 @@
 .articles-main{
-    padding: 2rem 2rem;
-    width: 100%;
-    display: grid;
-    gap: 1rem;
+    background: var(--clr-surface);
+    width: min(100% - 3rem, 100%);
+    margin-inline: auto;
     position: relative;
 }
 
-.articles-main > *{
-    margin-block-start: 1em;
+.articles-flow > *{
+    margin-top: 1em;
 }
 
 .searchbox{
-    border: none;
-    max-width: 250px;
-    background: var(--thirty-color);
-    border-top-left-radius: .6rem;
-    border-bottom-right-radius: .6rem;
-    padding: .5rem 1rem;
-    box-shadow: inset 0 0 5px 1px rgba(0, 0, 0, 0.3);
+    grid-area: searchbox;
 }
 
-.searchbox::placeholder{
-    font-weight: 700;
+
+.foryou{
+    grid-area: foryou;
 }
 
-.articles-cards-container{
-    display: grid;
-    gap: 2rem;
-}
-
-.principal-container{
-    display: grid;
-    gap: 1rem;
+.article-cards-container{
+    grid-area: articles;
 }
 
 .trending-container{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
+    grid-area: trending;
 }
 
-@media(min-width: 700px){
+.searchbox{
+    background: none;
+    border: none;
+    padding: .4rem .3rem;
+    border-bottom: 1px solid var(--clr-secondary);
+    max-width: 400px;
+}
+
+.searchbox::placeholder{
+    color: var(--clr-secondary)
+}
+
+.article-cards-container > * + *{
+    margin-top: 2em;
+}
+
+
+.trending-container > * + *{
+    margin-top: 1em;
+}
+
+@media(min-width: 1024px){
     .articles-main{
-        padding: 2rem 4rem;
+        width: min(100% - 5rem, 100%);
+        display: grid;
+        place-content: center;
+        gap: 1.5rem;
     }
-
-    .searchbox{
-        justify-self: flex-end;
-        max-width: 400px;
-    }
-}
+}    
 
 @media(min-width: 1500px){
     .articles-main{
-        grid-template-columns: 75% 25%;
+        grid-template-rows: 70%, 30%;
+        grid-template-columns: repeat(2, auto);
+        grid-template-areas: "searchbox ."
+                            "foryou ."
+                            "articles trending";
     }
 }

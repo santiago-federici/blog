@@ -21,7 +21,7 @@ export function ReadMore() {
 
 
     return(
-        <section className='readmore-card'>
+        <section className='readmore-card readmore-flow'>
         <NavLink to={'/articles'}><HiArrowNarrowLeft className='back-articles-arrow' /></NavLink>
             <img src={ Car } alt="" />
             <div className='readmore-card__info'>

@@ -1,5 +1,4 @@
 import { FaUserCircle } from 'react-icons/fa'
-import  Logo  from '../../../assets/images/logo.jpg'
 import { NavLink } from 'react-router-dom'
 import './navbar.css'
 
@@ -13,10 +12,7 @@ export function NavBar() {
     return (
         <header>
             <nav className='navbar'>
-                <img 
-                className='logo'
-                src={ Logo } 
-                alt="" />
+                <h1 className='logo'>LOGO</h1>
 
                 <ul className='pages-list'>
                     <NavLink activeclassname="active" className='page-navlink' to="/">Home</NavLink>
@@ -28,7 +24,7 @@ export function NavBar() {
 
                 <div className='btns-container'>
                     <NavLink className='login-btn' to={'/login'}><p>Login</p></NavLink>
-                    <NavLink className='register-btn register-btn-mobile' to={'/login'}><p>Register</p></NavLink>
+                    <NavLink className='register-btn' to={'/login'}><p>Register</p></NavLink>
                 </div>
             </nav>
         </header>

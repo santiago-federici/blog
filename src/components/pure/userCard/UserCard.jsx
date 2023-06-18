@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import './usercard.css'
 
-export function UserCard({userimg, userName, userat, initialIsFollowing}) {
+export function UserCard({userImg, userName, userAt, initialIsFollowing}) {
 
     const [isFollowing, setIsFollowing] = useState(initialIsFollowing)
 
@@ -13,10 +13,10 @@ export function UserCard({userimg, userName, userat, initialIsFollowing}) {
     return(
         <div className='user-card'>
                 <div className='user-card-info'>
-                    <img src={ userimg } alt="" />
+                    <img src={ userImg } alt="" />
                     <div>
-                        <p>{ userName }</p>
-                        <p className='user-card-at'>@{ userat }</p>
+                        <p className='user-card-name'>{ userName }</p>
+                        <p className='user-card-at'>@{ userAt }</p>
                     </div>
                 </div>
 

@@ -10,33 +10,33 @@ export function TrendingWriters() {
     const users = 
     [
         {
-            userimg: User,
+            userImg: User,
             userName: "Santi Federici",
-            userat: "santi-federici",
+            userAt: "santi-federici",
             initialIsFollowing: false
         },
         {
-            userimg: User,
+            userImg: User,
             userName: "Mati Navio",
-            userat: "matiasNavio",
+            userAt: "matiasNavio",
             initialIsFollowing: true
         },
         {
-            userimg: User,
+            userImg: User,
             userName: "Exe Carrizo",
-            userat: "eseba",
+            userAt: "eseba",
             initialIsFollowing: true
         },
         {
-            userimg: User,
+            userImg: User,
             userName: "Matias Mondello",
-            userat: "mondeYoMatias",
+            userAt: "mondeYoMatias",
             initialIsFollowing: false
         },
         {
-            userimg: User,
+            userImg: User,
             userName: "Giuliano Blenguini",
-            userat: "CarriDrogaNafta",
+            userAt: "CarriDrogaNafta",
             initialIsFollowing: false
         }
     ]
@@ -46,12 +46,13 @@ export function TrendingWriters() {
             <h2>Trending Writers</h2>
 
             {
-                users.map(({userimg, userName, userat, initialIsFollowing}) => (
+                users.map(({userImg, userName, userAt, initialIsFollowing}) => (
 
                     <UserCard 
-                    userimg={userimg} 
+                    key={userName}
+                    userImg={userImg} 
                     userName={userName} 
-                    userat={userat} 
+                    userAt={userAt} 
                     initialIsFollowing={initialIsFollowing} />
                 ))
             }

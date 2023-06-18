@@ -1,7 +1,48 @@
 :root{    
-    --sixty-color: #fff;
-    --thirty-color: #cfdffc;
-    --ten-color: #405ceb;
+    --clr-text: hsl(204, 20%, 10%);
+    --clr-surface: hsl(0, 0%, 90%);
+    --clr-primary: hsl(206, 100%, 66.1%);
+    --clr-secondary: hsl(0, 0%, 12%);
+    --clr-surface: hsl(152, 99%, 58.8%);
+
+    
+    --ff-base: 'Montserrat', sans-serif; 
+    --ff-accent: 'Barlow Condensed', sans-serif; 
+
+    /* Step -2: 12.50px → 10.00px */
+    --fs-100: clamp(0.63rem, calc(0.84rem + -0.27vw), 0.78rem);
+
+    /* Step -1: 15.00px → 14.14px */
+    --fs-200: clamp(0.88rem, calc(0.96rem + -0.09vw), 0.94rem);
+
+    /* Step 0: 18.00px → 20.00px */
+    --fs-300: clamp(1.13rem, calc(1.08rem + 0.22vw), 1.25rem);
+
+    /* Step 1: 21.60px → 28.28px */
+    --fs-400: clamp(1.35rem, calc(1.20rem + 0.73vw), 1.77rem);
+
+    /* Step 2: 25.92px → 39.99px */
+    --fs-500: clamp(1.62rem, calc(1.31rem + 1.53vw), 2.50rem);
+
+    /* Step 3: 31.10px → 56.54px */
+    --fs-600: clamp(1.94rem, calc(1.39rem + 2.77vw), 3.53rem);
+
+    /* Step 4: 37.32px → 79.95px */
+    --fs-700: clamp(2.33rem, calc(1.41rem + 4.63vw), 5.00rem);
+
+    /* Step 5: 44.79px → 113.05px */
+    --fs-800: clamp(2.80rem, calc(1.32rem + 7.42vw), 7.07rem);
+
+}
+
+@media(prefers-color-scheme: dark){
+    :root{    
+        --clr-text: hsl(204, 20%, 85%);
+        --clr-surface: hsl(0, 0%, 8%);
+        --clr-primary: hsl(206, 100%, 66.1%);
+        --clr-secondary: hsl(0, 0%, 98%);
+        --clr-accent: hsl(152, 99%, 58.8%);
+    }
 }
 
 *,
@@ -10,20 +51,33 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-size: 20px;
-    font-family: 'Libre Baskerville', serif;
+    font-size: var(--fs-300);
+    font-family: var(--ff-base);
 }
 
-::-webkit-scrollbar{
-    width: .7rem;
+html{
+    color-scheme: light dark;
+    background: var(--clr-surface);
+    color: var(--clr-text);
 }
 
-::-webkit-scrollbar-track{
-    background: var(--sixty-color);
+h1, h2, h3{
+    font-family: var(--ff-accent);
+    color: #fff;
 }
 
-::-webkit-scrollbar-thumb{
-    background: var(--ten-color);   
-    border: 2px solid var(--sixty-color);
-    border-radius: 1rem;
+h1{
+    font-size: var(--fs-600);
+}
+
+h2{
+    font-size: var(--fs-500);
+}
+
+h3{
+    font-size: var(--fs-400);
+}
+
+::marker{
+    color: var(--clr-primary);
 }

@@ -3,6 +3,9 @@
     padding: 1rem 1rem;
     display: grid;
     gap: .6rem;
+    border-radius: .5rem;
+
+    box-shadow: 0 0 15px 4px rgb(0, 0, 0, .6);
 }
 
 .topic-card{

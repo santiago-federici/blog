@@ -1,8 +1,8 @@
 .aioutlinehome,
-.grarticle,
+.aioutlinefiletext,
 .aioutlinefolder{
-    font-size: 2.5rem;
-    color: rgb(0 0 0);
+    font-size: var(--fs-600);
+    color: var(--clr-text);
 }
 
 .mobileicons-container{
@@ -10,10 +10,9 @@
     justify-content: space-around;
     align-items: center;
     padding: 1rem;
-    background: var(--sixty-color);
-    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.2);
+    background: var(--clr-surface);
+    box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.6);
     width: 100%;
-    height: 80px;
     gap: 2rem;
     position: fixed;
     bottom: 0;
@@ -21,6 +20,11 @@
     z-index: 999;
 }
 
+.active .aioutlinehome,
+.active .aioutlinefiletext,
+.active .aioutlinefolder{
+    color: var(--clr-primary);
+}
 
 @media (min-width: 1024px){
     .mobileicons-container{
